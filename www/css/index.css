@@ -1,0 +1,256 @@
+/*O vermehlo utilizado: 
+
+red darken-4{
+#B71C1C}
+
+*/
+
+/*Bordas dos ícones
+    red #450b0d
+*/
+
+
+html, body{
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  background: center fixed repeat url(../img/Hi.png);
+  overflow-x: hidden;
+  width: 100%;
+  text-decoration: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+  flex: 1 0 auto;
+}
+hr{
+  height: 5px;
+}
+
+.corpo{
+  display: none;
+}
+
+#loading {
+  position: fixed;
+  left: 34%;
+  top: 30%;
+} 
+
+#load{
+  color: #B71C1C;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #B71C1C;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*TOAST*/
+
+.myToast{
+  background: #B71C1C;
+  color: #FFFFFF;
+
+
+}
+/*ANTES DE USUÁRIO LOGADO*/
+#menu-side, .logado,#menu-voltar, .quem-somos, .load, #loading {
+    display: none;
+}
+.quem-somos, .cronograma{
+  margin-top: 20%;
+}
+
+.cronograma{
+  z-index: 0;
+}
+#mapa{
+    display: none;
+    align-content: center;
+    height:60%;
+}
+
+.consultar-exames{
+  display: none;
+  height: 200px;
+  margin-top: 20%;
+}
+.contactus{
+  overflow:scroll;
+  overflow-x:hidden;
+  margin-top: 20%;
+  display: none;
+}
+
+#auth{
+  margin-bottom: 10px;
+}
+
+a { color: inherit; } 
+
+#conteudo{
+    display: none;
+}
+.menu-icons{
+  border-radius: 25px;
+}
+
+h5.brand-log{
+  padding-top: 15px;
+}
+
+form#auth{
+  height: auto;
+}
+.teorico h5 {
+  font-size: 1.2em !important;
+}
+
+h6{
+    color: black;
+    /*font-family: 'Slabo 27px', serif;*/
+    font-size: 1em;
+/*    text-shadow: black 0.001em 0.001em 0.1em;*/
+}
+
+
+.topo-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.main{
+    margin-top: 30%;
+}
+
+.logado{
+  z-index: 1;
+}
+
+.img-face{
+    max-width: 72px;
+    max-height: 72px;
+}
+.placas{
+    max-width: 18px;
+    max-height: 18px;
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+    margin-left: 40%;
+    margin-right: auto;
+}
+
+
+.collection-item{
+    padding: 15px; 
+}
+.collection-item:hover{
+    background: #111;
+}
+
+.footer {
+  color: white;
+  background: #B71C1C;
+	position:fixed;
+	bottom:-2px;
+	width:100%;
+  z-index: 1;
+}
+
+/*header, main, footer {
+  padding-left: 300px;
+}*/
+/*#foot{
+    margin-right: 5%;
+    margin-top: -0.4%;
+}*/
+
+@media screen and (min-width : 480px) {
+  body{
+    padding: 0;
+  }
+
+  .main{
+    margin-top: 100px;
+  }
+
+  .img-face{
+    max-width: 128px;
+    max-height: 128px;
+  }
+  h6#load{
+    font-size: 1.0em;
+  }
+  h6{
+    font-size: 1.6em;
+  }
+  #loading {
+    position: fixed;
+    left: 40%;
+    top: 30%;
+  }
+ }
+
+/*.input-field label{
+    color: #B71C1C;
+}
+.input-field input[type=text]:focus + label{
+    color: #000 ;
+}
+.input-field input[type=email]:focus + label{
+    color: #000 ;
+}
+.input-field input[type=text]:focus{
+    border-bottom: 1px solid #999;
+    box-shadow: 0 1px 0 0 #000 ;
+}
+.input-field input[type=email]:focus{
+    border-bottom: 1px solid #999;
+    box-shadow: 0 1px 0 0 #000 ;
+}
+.input-field .prefix{
+    color: #B71C1C;
+}
+.input-field .prefix.active #textarea{
+    color:#000;
+}*/
+
+#map {
+    display: none;
+    margin-top: 20%;
+}
+
+
+
+.beforeLogged{
+  display: none;
+  margin-top: 20%;
+}
+/*----------------------*/
+
+
+#myframe{
+  width: 100%;
+  height: 400px;
+}

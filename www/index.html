@@ -59,10 +59,10 @@
 
           <div class="topo-fixo z-depth-3">
              <div class="red darken-4 black-text valign-wrapper ">
-                <ul class="tabs red darken-4">
+                <ul class="tabs red darken-4" id="gMap">
                   <li class="tab"><a href="#info" class="white-text waves-effect waves-light active">Info</a></li>
                   <li class="tab"><a href="#login" class="white-text waves-effect waves-light">Acesso</a></li>
-                  <li class="tab"><a href="#contato" class="white-text waves-effect waves-light">Contato</a></li>
+                  <li class="tab"><a href="#contato" class="white-text waves-effect waves-light" >Contato</a></li>
               </ul>
              </div>
           </div>
@@ -109,9 +109,10 @@
           </div> 
           <div class="section container" id="contato">
             <div class="col s12 m6">
-                  <br>
-                  <form action="#" id="contato-form" class="col s12 blue-grey-text">
-                      <h5 class="red-text darken-4 center">Formulário de Contato</h5>
+              <div class="row">
+                    <form action="#" id="contato-form" class="col s12 blue-grey-text">
+                      <h5 class="red-text darken-4 center">Solicite já um Orçamento</h5>
+                      <div class="col s12 z-depth-3">
                       <div class="input-field col s12">
                           <i class="material-icons prefix">account_circle</i>
                           <input type="text" class="validate" required="Preencha este campo" id="c-nome">
@@ -136,72 +137,79 @@
                               </button>
                          </div>
                       </div>
+                    </div>
                   </form>
+               </div>
               </div>
+              <div class="container lighten-blue">
+                 <h5 class="red-text darken-4 center">Localização</h5> 
+              </div>
+              <div id="localizacao" style="width: 100%; height: 300px;"></div>
+
           </div>   
         </div>
                    
         <div class="logado">
-                    <!--    Início Navbar   -->
-        <div class="topo-fixo z-depth-3">
-           <div class="red darken-4 black-text valign-wrapper ">
-               <a href="#" data-activates="slide-out" class="button-collapse" id="menu-side">
-                   <i class="material-icons white-text waves-effect waves-circle">more_vert</i>
-               </a>
-               <a href="#" id="menu-voltar">
-                   <i class="material-icons white-text waves-effect waves-circle">keyboard_arrow_left</i>
-               </a>
-               <img class="logo brand-logo right responsive-img" src="img/logo-brand.png" alt="">
-           </div>
-        </div>
-                        <!--     Fim Navbar   -->
-                        
-                        <!--     Início Menu Principal        -->
-            <div class="container main">
-                <div class="row center-align">
-                    <div class="col s6 m6 l6" id="consultar-exames">
-                           <a href="#" class="waves-effect">
-                               <img class="img-face responsive-img" src="img/Doctor.png" alt="">
-                           </a>
-                           <h6>Consultar Exames</h6>
+                      <!--    Início Navbar   -->
+          <div class="topo-fixo z-depth-3">
+             <div class="red darken-4 black-text valign-wrapper ">
+                 <a href="#" data-activates="slide-out" class="button-collapse" id="menu-side">
+                     <i class="material-icons white-text waves-effect waves-circle">more_vert</i>
+                 </a>
+                 <a href="#" id="menu-voltar">
+                     <i class="material-icons white-text waves-effect waves-circle">keyboard_arrow_left</i>
+                 </a>
+                 <img class="logo brand-logo right responsive-img" src="img/logo-brand.png" alt="">
+             </div>
+          </div>
+                          <!--     Fim Navbar   -->
+                          
+                          <!--     Início Menu Principal        -->
+              <div class="container main">
+                  <div class="row center-align">
+                      <div class="col s6 m6 l6" id="consultar-exames">
+                             <a href="#" class="waves-effect">
+                                 <img class="img-face responsive-img" src="img/Doctor.png" alt="">
+                             </a>
+                             <h6>Consultar Exames</h6>
 
-                    </div>
-                    <div class="col s6 m6 l6">
-                        <a href="#" class="waves-effect crono" id="cronograma">
-                            <img src="img/cap-icon-white.png" alt="" class="img-face responsive-img">
-                        </a>
-                        <h6>Aulas Teóricas</h6>
-                    </div>
-                </div>
-                <div class="row center-align">
-                    <div class="col s6 m6 l6">
-                        <a href="#" class="waves-effect simulado" >
-                            <img src="img/simulado-white.png" alt="" class="img-face responsive-img">
-                        </a>
-                        <h6>Simulados</h6>
-                    </div>
-                    <div class="col s6 m6 l6">
-                           <a href="#" class="waves-effect fb">
-                               <img class=" img-face responsive-img" src="img/facebook-white.png" alt="Quem Somos">
-                           </a>
-                           <h6>Facebook</h6>
-                    </div>
-                </div>
-                 <div class="row center-align">
-                    <div class="col s6 m6 l6 contact">
-                        <a href="#" class="waves-effect">
-                            <img src="img/callcenter-white.png" alt="" class="img-face responsive-img">
-                        </a>
-                        <h6>Fale Conosco</h6>
-                    </div>
-                    <div class="col s6 m6 l6" id="local">
-                        <a href="#" class="waves-effect">
-                            <img src="img/location-white.png" alt="" class="img-face responsive-img">
-                        </a>
-                        <h6>Nossa Localização</h6>
-                    </div>
-                </div>
-            </div>
+                      </div>
+                      <div class="col s6 m6 l6">
+                          <a href="#" class="waves-effect crono" id="cronograma">
+                              <img src="img/cap-icon-white.png" alt="" class="img-face responsive-img">
+                          </a>
+                          <h6>Aulas Teóricas</h6>
+                      </div>
+                  </div>
+                  <div class="row center-align">
+                      <div class="col s6 m6 l6">
+                          <a href="#" class="waves-effect simulado" >
+                              <img src="img/simulado-white.png" alt="" class="img-face responsive-img">
+                          </a>
+                          <h6>Simulados</h6>
+                      </div>
+                      <div class="col s6 m6 l6">
+                             <a href="#" class="waves-effect fb">
+                                 <img class=" img-face responsive-img" src="img/facebook-white.png" alt="Quem Somos">
+                             </a>
+                             <h6>Facebook</h6>
+                      </div>
+                  </div>
+                   <div class="row center-align">
+                      <div class="col s6 m6 l6 contact">
+                          <a href="#" class="waves-effect">
+                              <img src="img/callcenter-white.png" alt="" class="img-face responsive-img">
+                          </a>
+                          <h6>Fale Conosco</h6>
+                      </div>
+                      <div class="col s6 m6 l6" id="local">
+                          <a href="#" class="waves-effect">
+                              <img src="img/location-white.png" alt="" class="img-face responsive-img">
+                          </a>
+                          <h6>Nossa Localização</h6>
+                      </div>
+                  </div>
+              </div>
         </div>
 
                                 <!--    Fim Menu Principal    -->
@@ -280,6 +288,7 @@
 
             </div>
             <div id="mapa"></div>
+
 
         <!--
                 <div class="container">

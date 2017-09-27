@@ -59,6 +59,7 @@ $(document).ready(function(){
                     console.log(typeof(student));
                     $('#loading').hide();
                     $('.beforeLogged').show();
+                    
                 }
 
             }
@@ -208,6 +209,29 @@ $(document).ready(function(){
             center: myLat,
             zoom: 16
         });
+        var marker = new google.maps.Marker({
+            position: {lat:-22.2486856,lng:-53.3501183},
+            map: map,
+            title: 'Autoescola União'
+        });
+        marker.setMap(map);
+
+    }
+
+    /* Configurações do Mapa ANTES DE LOGAR */
+
+    $('#gMap').click(function(){
+        openMap();
+    });
+
+    function openMap(){
+        var myLat = {lat:-22.248762, lng:-53.350253 };
+        var mapOptions = {
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: myLat,
+        };
+        var map = new google.maps.Map(document.getElementById('localizacao'), mapOptions);
         var marker = new google.maps.Marker({
             position: {lat:-22.2486856,lng:-53.3501183},
             map: map,

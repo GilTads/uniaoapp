@@ -10,7 +10,7 @@ red darken-4{
 */
 
 
-html, body{
+html, body, .beforeLogged, #contato, #localizacao{
   font-family: 'Ubuntu', sans-serif;
   height: 100%;
   background: center fixed repeat url(../img/Hi.png);

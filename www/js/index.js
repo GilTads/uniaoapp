@@ -33,6 +33,7 @@ $(document).ready(function(){
     /*LOGIN AUTOMATICO*/
     $('.beforeLogged').hide();
     $('#loading').show();
+    
         $.ajax({
             async: false,
             url  : 'http://uniaoappserver.herokuapp.com/jwtLogin',
